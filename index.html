@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">NETFLIX</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#movies">Movies</a>
+            <a href="#series">TV Shows</a>
+        </nav>
+
+        <div class="nav-right">
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button class="login-btn">Sign In</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Unlimited Movies, TV Shows & More.</h2>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Discover your next favorite movie today.</p>
+
+            <div class="hero-buttons">
+                <button onclick="playMovie()">▶ Play</button>
+                <button class="info-btn" onclick="showInfo()">
+                    ⓘ More Info
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Movies -->
+    <section class="movie-section" id="trending">
+        <h2>Trending Now</h2>
+        <div class="movie-container">
+
+            <div class="movie-card" data-title="Stranger Things">
+                <img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg">
+                <h3>Stranger Things</h3>
+            </div>
+
+            <div class="movie-card" data-title="Wednesday">
+                <img src="https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg">
+                <h3>Wednesday</h3>
+            </div>
+
+            <div class="movie-card" data-title="Money Heist">
+                <img src="https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg">
+                <h3>Money Heist</h3>
+            </div>
+
+            <div class="movie-card" data-title="The Witcher">
+                <img src="https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg">
+                <h3>The Witcher</h3>
+            </div>
+
+            <div class="movie-card" data-title="Dark">
+                <img src="https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg">
+                <h3>Dark</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popular Movies -->
+    <section class="movie-section" id="movies">
+        <h2>Popular Movies</h2>
+
+        <div class="movie-container">
+
+            <div class="movie-card" data-title="Inception">
+                <img src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg">
+                <h3>Inception</h3>
+            </div>
+
+            <div class="movie-card" data-title="Interstellar">
+                <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg">
+                <h3>Interstellar</h3>
+            </div>
+
+            <div class="movie-card" data-title="Joker">
+                <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
+                <h3>Joker</h3>
+            </div>
+
+            <div class="movie-card" data-title="Avengers">
+                <img src="https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg">
+                <h3>Avengers</h3>
+            </div>
+
+            <div class="movie-card" data-title="Avatar">
+                <img src="https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg">
+                <h3>Avatar</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TV Shows -->
+    <section class="movie-section" id="series">
+        <h2>Popular TV Shows</h2>
+
+        <div class="movie-container">
+
+            <div class="movie-card" data-title="Breaking Bad">
+                <img src="https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg">
+                <h3>Breaking Bad</h3>
+            </div>
+
+            <div class="movie-card" data-title="Peaky Blinders">
+                <img src="https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg">
+                <h3>Peaky Blinders</h3>
+            </div>
+
+            <div class="movie-card" data-title="Loki">
+                <img src="https://image.tmdb.org/t/p/w500/voHUmluYmKyleFkTu3lOXQG702u.jpg">
+                <h3>Loki</h3>
+            </div>
+
+            <div class="movie-card" data-title="The Boys">
+                <img src="https://image.tmdb.org/t/p/w500/stTEycfG9928HYGEISBFaG1ngjM.jpg">
+                <h3>The Boys</h3>
+            </div>
+
+            <div class="movie-card" data-title="Squid Game">
+                <img src="https://image.tmdb.org/t/p/w500/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg">
+                <h3>Squid Game</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2 class="footer-logo">NETFLIX</h2>
+        <p>Questions? Contact us.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#series">TV Shows</a>
+            <a href="#trending">Trending</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Netflix UI Project. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
